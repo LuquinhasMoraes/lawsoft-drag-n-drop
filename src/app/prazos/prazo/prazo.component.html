@@ -1,17 +1,19 @@
 <!-- Item Profissional -->
 <div class="accordion" id="accordion-prazos{{prazos.id}}"  dnd-draggable [dragEnabled]="true" [dragData]="prazos" >
     <div class="card">
-      <div class="card-header" id="heading-prazos">
-        <h5 class="mb-0">
+      <a data-toggle="collapse" [attr.data-target]="'#collapse-prazos' + prazos.id" aria-expanded="true" [attr.aria-controls]="'collapse-prazos' + prazos.id">
+        <div class="card-header" id="heading-prazos">
+          <h5 class="mb-0">
 
-          <button class="btn btn-link" type="button" data-toggle="collapse" [attr.data-target]="'#collapse-prazos' + prazos.id" aria-expanded="true" [attr.aria-controls]="'collapse-prazos' + prazos.id">
-              <i class="fas fa-angle-double-right"></i>
-          </button>
-        
-          <small>{{prazos.Assunto}}</small>
+            <button class="btn btn-link" type="button" >
+                <i class="fas fa-angle-double-right"></i>
+            </button>
+          
+            <small>{{prazos.Assunto}}</small>
 
-        </h5>
-      </div>
+          </h5>
+        </div>
+      </a>
   
       <div id="collapse-prazos{{prazos.id}}" class="collapse" aria-labelledby="heading-prazos" [attr.data-parent]="'#accordion-prazos' + prazos.id">
         <div class="card-body">
