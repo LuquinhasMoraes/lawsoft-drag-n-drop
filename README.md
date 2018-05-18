@@ -23,6 +23,10 @@ Clone o projeto na pasta desejada:
 
 `git clone https://github.com/LuquinhasMoraes/lawsoft-drag-n-drop`
 
+Caso não tenha o Angular 2^ instalado em sua máquina, rode o seguinte comando: 
+
+`npm install -g @angular/cli`
+
 Agora é preciso instalar o Json Server para testar a aplicação (caso já tenha, ignore esta etapa).
 
 `npm install -g json-server`
