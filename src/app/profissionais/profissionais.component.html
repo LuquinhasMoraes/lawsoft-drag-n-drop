@@ -39,9 +39,11 @@
           <!-- Item Profissional -->
           <!-- <div class="accordion" id="accordion" > -->
             <div class="card"  *ngFor="let profissional of profissionais; let indiceProfissional = index" dnd-droppable (onDropSuccess)="transferir($event, profissional.id)">
+                
+              <a data-toggle="collapse" [attr.data-target]="'#collapse' + profissional.id" aria-expanded="true" [attr.aria-controls]="'collapseOne' + profissional.id">
                 <div class="card-header" id="headingOne">
                   <h5 class="mb-0">
-                      <button class="btn btn-link" type="button" data-toggle="collapse" [attr.data-target]="'#collapse' + profissional.id" aria-expanded="true" [attr.aria-controls]="'collapseOne' + profissional.id">
+                      <button class="btn btn-link" type="button">
                           <i class="fas fa-angle-double-right"></i>
                       </button>
                       <small>{{ profissional.nome }}</small>
@@ -49,6 +51,7 @@
             
                   </h5>
                 </div>
+              </a>
             
                 <div id="collapse{{profissional.id}}" class="collapse" [attr.aria-labelledby]="'heading'+ profissional.id" [attr.data-parent]="'#accordion' + profissional.id">
                   <div class="card-body"  >
@@ -71,7 +74,8 @@
             
                   </div>
                 </div>
-              </div>
+              
+            </div>
             <!-- </div> -->
             <!-- Fim Item Profissional -->
       
