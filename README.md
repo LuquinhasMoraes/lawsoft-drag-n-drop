@@ -21,4 +21,6 @@ Também foi utilizada uma classe de Serviços, chamada AppService. Ela é a cama
 
 É preciso instalar o Json Server para testar a aplicação:
 
-> npm install -g json-server
+`npm install -g json-server`
+
+
