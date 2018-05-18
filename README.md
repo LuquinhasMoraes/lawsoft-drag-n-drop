@@ -1,27 +1,24 @@
-# DesafioLawsoft
+# Projeto Lawsoft
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.1.
+Esse projeto visa avaliar competências de front-end. O sistema funciona com uma agenda de prazos e profissionais, onde o usuário pode arrastar um ou mais prazos para um profissional em questão.
 
-## Development server
+## Tecnologias de desenvolvimento
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+- Angular 4
+- Json Server
+- Bootstrap
+- JS
+- CSS
+- HTML
 
-## Code scaffolding
+## Arquitetura
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Já que o framework Angular 4 foi utilizado do desenvolvimento, todo projeto segue uma arquitetura baseada em Módulos e Componentes, onde a estrutura das views podem ser dividas em componentes e subcomponents. 
 
-## Build
+Também foi utilizada uma classe de Serviços, chamada AppService. Ela é a camada que se comunica com o back-end através de requições http. 
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+## Como rodar a aplicação
 
-## Running unit tests
+É preciso instalar o Json Server para testar a aplicação:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+> npm install -g json-server
