@@ -1,6 +1,6 @@
 # Projeto Lawsoft
 
-Esse projeto visa avaliar competências de front-end. O sistema funciona com uma agenda de prazos e profissionais, onde o usuário pode arrastar um ou mais prazos para um profissional em questão.
+Esse projeto visa avaliar competências de front-end. O sistema exibe uma lista de Prazos e Profissionais, permitindo que o usuário arraste um ou mais prazos para um profissional em questão.
 
 ## Tecnologias de desenvolvimento
 
