@@ -17,9 +17,13 @@ Já que o framework Angular 4 foi utilizado do desenvolvimento, todo projeto seg
 
 Também foi utilizada uma classe de Serviços, chamada AppService. Ela é a camada que se comunica com o back-end através de requições http. 
 
-## Como rodar a aplicação
+## Inicializar a aplicação
 
-É preciso instalar o Json Server para testar a aplicação:
+Clone o projeto na pasta desejada:
+
+`git clone https://github.com/LuquinhasMoraes/lawsoft-drag-n-drop`
+
+Agora é preciso instalar o Json Server para testar a aplicação (caso já tenha, ignore esta etapa).
 
 `npm install -g json-server`
 
