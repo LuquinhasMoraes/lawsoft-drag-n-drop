@@ -1,0 +1,42 @@
+<section class="content-header">
+  <h1>
+    Filtro Prazos
+  </h1>
+</section>
+
+<section class="form-inline">
+  <div class="form-group mb-0 form-filtros">
+      <input type="text" class="form-control input" placeholder="Assunto/Título do Prazo">
+  </div>
+  <div class="form-group">
+    
+      <select class="form-control mx-sm-1  mb-0 form-filtros">
+          <option>Área a Definir</option>
+      </select>
+  </div>
+</section>
+
+<select class="form-control form-filtros">
+    <option>Área a Definir</option>
+</select>
+
+<div class="form-filtros">
+  <button type="button" class="btn btn-primary">Filtrar</button>
+  <button type="button" class="btn btn-info">Limpar Filtros</button>
+</div>
+
+<!-- Lista de Prazos -->
+<section class="lista-prazos">
+  <div class="alert alert-warning">
+      <b>Prazos</b> <small class="float-right">Arraste os prazos para um profissional</small>
+  </div>  
+  <div class="card card-prazos">
+    <div class="card-body">
+
+      <lawsotf-prazo *ngFor="let prazo of prazos | async" [prazos]="prazo"  ></lawsotf-prazo>
+
+    </div>
+  </div>
+</section>
+
+ 

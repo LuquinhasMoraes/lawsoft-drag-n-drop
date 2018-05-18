@@ -1,0 +1,79 @@
+<section class="content-header">
+    <h1>
+      Filtro Profissionais
+    </h1>
+  </section>
+
+  <div class="form-filtros">
+    <button type="button" class="btn btn-primary">15/05/2018</button>
+    <button type="button" class="btn btn-primary">14/06/2018</button>
+  </div>
+  
+  <section class="form-inline">
+    <div class="form-group mb-0 form-filtros">
+        <input type="text" class="form-control input" placeholder="Assunto/Título do Prazo">
+    </div>
+    <div class="form-group">
+        <select class="form-control mx-sm-1  mb-0 form-filtros">
+            <option>Área a Definir</option>
+        </select>
+    </div>
+  </section>
+  
+  <div class="form-filtros">
+    <button type="button" class="btn btn-primary">Filtrar</button>
+    <button type="button" class="btn btn-info">Limpar Filtros</button>
+  </div>
+ 
+    <!-- Lista de Prazos -->
+  <section class="lista-prazos">
+    <div class="alert alert-info">
+        <b>Profissionais</b> <small class="float-right">Lista de profissionais</small>
+    </div>  
+    <div class="card card-prazos">
+      <div class="card-body">
+
+        <!-- <lawsotf-profissional *ngFor="let profissional of profissionais | async" [profissional]="profissional" dnd-droppable (onDropSuccess)="transferDataSuccess($event, profissional.id)" ></lawsotf-profissional>        -->
+        <!-- <div> -->
+          
+          <!-- Item Profissional -->
+          <!-- <div class="accordion" id="accordion" > -->
+            <div class="card"  *ngFor="let profissional of profissionais; let indiceProfissional = index" dnd-droppable (onDropSuccess)="transferir($event, profissional.id)">
+                <div class="card-header" id="headingOne">
+                  <h5 class="mb-0">
+                      <button class="btn btn-link" type="button" data-toggle="collapse" [attr.data-target]="'#collapse' + profissional.id" aria-expanded="true" [attr.aria-controls]="'collapseOne' + profissional.id">
+                          <i class="fas fa-angle-double-right"></i>
+                      </button>
+                      <small>{{ profissional.nome }}</small>
+                      <span class="badge badge-info float-right">{{profissional.prazosProfissional.length}} Prazo(s)</span>
+            
+                  </h5>
+                </div>
+            
+                <div id="collapse{{profissional.id}}" class="collapse" [attr.aria-labelledby]="'heading'+ profissional.id" [attr.data-parent]="'#accordion' + profissional.id">
+                  <div class="card-body"  >
+            
+                      <ng-container *ngIf="profissional.prazosProfissional.length > 0" >
+                          <div class="card"  *ngFor="let praz of profissional.prazosProfissional">
+                              <div class="card-body">
+                                <a href="#" (click)="removePrazo(praz.id, praz, indiceProfissional)" class="btn btn-danger btn-sm float-right align-top"> <i class="fa fa-trash"></i> </a>
+                                <p class="card-text" >
+                                  <b>Assunto:</b> <br> {{ praz.prazo[0].assunto }}
+                                  <br><b>Cliente:</b> <br>{{ praz.prazo[0].cliente }}
+                                  <br><b>Data:</b><br> {{ praz.prazo[0].data }}
+                                </p> 
+                              </div>
+                            </div>
+                      </ng-container>
+            
+                  </div>
+                </div>
+              </div>
+            <!-- </div> -->
+            <!-- Fim Item Profissional -->
+      
+      </div>
+    </div>
+  </section>
+  
+   

@@ -1,0 +1,75 @@
+{
+  "prazos": [
+    {
+      "id": "1",
+      "Cliente": "CENCOSUD BRASIL COMERCIAL LTDA - ANTIGO G. BARBOSA",
+      "Data": "31/05/2018 22:00:00",
+      "Assunto": "IVANA BARBOSA DE OLIVEIRA ALVES"
+    },
+    {
+      "id": "2",
+      "Cliente": "WALMART- BOMPRECO BAHIA SUPERMERCADOS LTDA",
+      "Data": "30/06/2018 18:00:00",
+      "Assunto": "EDNO DOS SANTOS SILVA"
+    },
+    {
+      "id": "3",
+      "Cliente": "WALMART- BOMPRECO BAHIA SUPERMERCADOS LTDA",
+      "Data": "10/07/2018 00:00:00",
+      "Assunto": "DIOGO SANTOS RIBEIRO"
+    },
+    {
+      "id": "4",
+      "Cliente": "BANCO BRADESCO S/A SALVADOR",
+      "Data": "10/07/2018 16:00:00",
+      "Assunto": "1000020477"
+    },
+    {
+      "id": "5",
+      "Cliente": "BANCO BRADESCO S/A SALVADOR",
+      "Data": "31/07/2018 00:00:00",
+      "Assunto": "1000071044"
+    }
+  ],
+  "profissional": [
+    {
+      "id": "1",
+      "nome": "ANGELO CALDEIRA"
+    },
+    {
+      "id": "2",
+      "nome": "LISA HAYASHIDA"
+    },
+    {
+      "id": "3",
+      "nome": "FRANCINE ALMEIDA"
+    },
+    {
+      "id": "4",
+      "nome": "FERNANDO CRUZ"
+    },
+    {
+      "id": "5",
+      "nome": "RAFAEL DOS SANTOS"
+    },
+    {
+      "id": "6",
+      "nome": "GREG ARAUJO"
+    }
+  ],
+  "prazosProfissional": [
+    {
+      "description": "Received",
+      "prazo": [
+        {
+          "id": "3",
+          "cliente": "WALMART- BOMPRECO BAHIA SUPERMERCADOS LTDA",
+          "data": "10/07/2018 00:00:00",
+          "assunto": "DIOGO SANTOS RIBEIRO"
+        }
+      ],
+      "profissionalId": "1",
+      "id": 11
+    }
+  ]
+}

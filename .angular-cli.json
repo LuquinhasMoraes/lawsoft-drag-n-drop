@@ -17,11 +17,19 @@
       "test": "test.ts",
       "tsconfig": "tsconfig.app.json",
       "testTsconfig": "tsconfig.spec.json",
-      "prefix": "app",
+      "prefix": "lawsotf",
       "styles": [
-        "styles.css"
+        "./../node_modules/bootstrap/dist/css/bootstrap.min.css",
+        "./../node_modules/ng2-dnd/bundles/style.css",
+        "./../src/styles.css",
+        "./../node_modules/ngx-toastr/toastr.css",
+        "./../node_modules/ng2-toastr/bundles/ng2-toastr.min.css"
       ],
-      "scripts": [],
+      "scripts": [
+        "./../node_modules/jquery/dist/jquery.min.js",
+        "./../node_modules/bootstrap/dist/js/bootstrap.min.js",
+        "./../node_modules/ng2-toastr/bundles/ng2-toastr.min.js"
+      ],
       "environmentSource": "environments/environment.ts",
       "environments": {
         "dev": "environments/environment.ts",
