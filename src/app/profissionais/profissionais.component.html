@@ -45,7 +45,7 @@
                           <i class="fas fa-angle-double-right"></i>
                       </button>
                       <small>{{ profissional.nome }}</small>
-                      <span class="badge badge-info float-right">{{profissional.prazosProfissional.length}} Prazo(s)</span>
+                      <span class="badge badge-info float-right"><b>{{profissional.prazosProfissional.length}}</b> Prazo(s)</span>
             
                   </h5>
                 </div>
@@ -53,7 +53,7 @@
                 <div id="collapse{{profissional.id}}" class="collapse" [attr.aria-labelledby]="'heading'+ profissional.id" [attr.data-parent]="'#accordion' + profissional.id">
                   <div class="card-body"  >
             
-                      <ng-container *ngIf="profissional.prazosProfissional.length > 0" >
+                      <ng-container *ngIf="profissional.prazosProfissional.length > 0; else elseBlock" >
                           <div class="card"  *ngFor="let praz of profissional.prazosProfissional">
                               <div class="card-body">
                                 <a href="#" (click)="removePrazo(praz.id, praz, indiceProfissional)" class="btn btn-danger btn-sm float-right align-top"> <i class="fa fa-trash"></i> </a>
@@ -65,6 +65,9 @@
                               </div>
                             </div>
                       </ng-container>
+                      <ng-template #elseBlock>
+                        <div class="alert alert-danger">Não há prazos para esse profissional.</div>
+                      </ng-template>
             
                   </div>
                 </div>
