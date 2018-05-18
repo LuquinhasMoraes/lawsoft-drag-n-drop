@@ -23,6 +23,10 @@ Clone o projeto na pasta desejada:
 
 `git clone https://github.com/LuquinhasMoraes/lawsoft-drag-n-drop`
 
+Para gerenciar as depêndencias do projeto, vamos instalar o nodejs, para termos acesso ao NPM (Node Package Manager). Instalação: 
+
+<a href="https://nodejs.org/en/download/" target="_blank">Download NodeJS</a>
+
 Caso não tenha o Angular 2^ instalado em sua máquina, rode o seguinte comando: 
 
 `npm install -g @angular/cli`
