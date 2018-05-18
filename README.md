@@ -23,4 +23,23 @@ Também foi utilizada uma classe de Serviços, chamada AppService. Ela é a cama
 
 `npm install -g json-server`
 
+Após a instalação é necessário inicializar o servidor json. Entre na raiz do projeto e dê o seguinte comando:
+
+`json-server db.json`
+
+Isso irá colocar de pé o servidor. 
+
+Agora é necessário inicializar a aplicação, mas antes rode o comando:
+
+`npm install`
+
+Para garantir que todas dependências sejam instaladas.
+
+Após a execução do comando, rode:
+
+`ng serve`
+
+
+
+
 
